@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Search form with AngualrJS</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<script src="http://code.angularjs.org/angular-1.0.0.min.js"></script>
+	<script src="js/search.js"></script>
+</head>
+
+<body>
+
+	<div ng-controller="SearchCtrl">
+		<div class="bar">
+			<input type="text" ng-model="keywords" class="input-medium search-query" placeholder="Enter your search">
+		</div>
+		<button type="submit" class="btn" ng-click="search()">Search</button>
+
+		<p id="name">{{Name}}</p>	
+		<p ng-class="{'neg': change <= 0 , 'pos': change >= 0 }">{{latestprice}}</p>
+	<div class="sorry" ng-model="result">
+		{{result}}
+	</div>
+   </div>
+</body>
+
+</html> 

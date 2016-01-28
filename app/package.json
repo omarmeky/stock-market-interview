@@ -1,0 +1,11 @@
+{
+  "name": "stock-market-interview",
+  "version": "0.0.0",
+  "description": "A search web application that displays the latest stock prices.",
+  "main": "search.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rozsamuels/stock-market-interview.git"
+  },
+  "author": "Roslyn Samuels"
+}
