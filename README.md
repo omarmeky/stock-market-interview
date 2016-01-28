@@ -21,3 +21,7 @@ Although this is a very simple application, please organize it as you would an e
 Please fork this repository and submit your solution as a pull request. Modify the README with instructions on how to run the application. The application should run with a single command (either `grunt` or `gulp`).
 
 Good Luck! :smiley:
+
+### Run / Open application
+
+This is a simple browser application download app open app/index.html in browser window.
