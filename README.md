@@ -6,13 +6,15 @@ A leading financial institution has hired you to develop a web application that 
 
 ### Requirements
 
-Build an angular application with a search field. When the user searches for a stock ticker, display the stock's latest price. Also, visually indicate if this stock is in the green (positive change) or red (negative change).
+Build an angular application with a stock ticker search field. After the user enters the desired symbol, he or she clicks a "Search" button or presses the Enter key to trigger a search. While the search is happening, display a loader so the user knows to wait. When the search is complete, display the stock's latest price. Also, visually indicate if this stock is in the green (positive change) or red (negative change).
 
 Your application will use the following API call to lookup information about a stock:
 
 `http://cors-anywhere-eu.herokuapp.com/http://dev.markitondemand.com/Api/v2/Quote/json`
 
 The endpoint expects a query parameter called `symbol` which takes the stock's ticker. For example, to look up quotes for Apple, you would pass in the value `aapl`.
+
+To minimize requests to the server, cache the result of each search. If the user searches for the same symbol within the hour, display the cached resultset instead of making another network request.
 
 Although this is a very simple application, please organize it as you would an enterprise level one.
 
