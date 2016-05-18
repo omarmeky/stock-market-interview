@@ -14,7 +14,9 @@ Your application will use the following API call to lookup information about a s
 
 The endpoint expects a query parameter called `symbol` which takes the stock's ticker. For example, to look up quotes for Apple, you would pass in the value `aapl`.
 
-To minimize requests to the server, cache the result of each search. If the user searches for the same symbol within the hour, display the cached resultset instead of making another network request.
+To minimize requests to the server, cache the result of each search. If the user searches for the same symbol within the hour, display the cached result instead of making another network request.
+
+Finally, after each search update a visual "history" of the user's searches. The user may click on items in the history to quickly go back to a previous stock/search.
 
 Although this is a very simple application, please organize it as you would an enterprise level one.
 
